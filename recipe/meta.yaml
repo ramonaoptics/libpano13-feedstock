@@ -17,6 +17,7 @@ source:
     - touchup_windows.patch  # [win]
 
 build:
+  skip: true   # [win]
   number: 0
   run_exports:
     - {{ pin_subpackage('libpano13', max_pin='x.x.x') }}
